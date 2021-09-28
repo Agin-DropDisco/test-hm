@@ -10,8 +10,8 @@
     "build:harmony": "graph build subgraph.harmony.yaml",
     "build:rinkeby": "graph build subgraph.rinkeby.yaml",
     "build:harmony_test": "graph build subgraph.harmony-testnet.yaml",
-    "deploy:rinkeby": "graph deploy agin-dropdisco/dexswap-rinkeby-gin subgraph.rinkeby.yaml --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --access-token fb68df21c1d149f68548567cc53a8844 --debug",
-    "deploy:harmony": "graph deploy agin-dropdisco/harmony_dexswap subgraph.harmony.yaml --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --access-token fb68df21c1d149f68548567cc53a8844 --debug"
+    "deploy:rinkeby": "graph deploy agin-dropdisco/dexswap-rinkeby-gin subgraph.rinkeby.yaml --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --access-token <please use your token access> --debug",
+    "deploy:harmony": "graph deploy agin-dropdisco/harmony_dexswap subgraph.harmony.yaml --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --access-token <please use your token access>4 --debug"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.19.0",
