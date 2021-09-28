@@ -1,0 +1,26 @@
+{
+  "name": "dexs-subgraph",
+  "version": "1.0.0",
+  "repository": "https://github.com/Agin-DropDisco/harmony-dexswap-subgraph",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "codegen:rinkeby": "graph codegen subgraph.rinkeby.yaml --output-dir src/types/",
+    "codegen:harmony": "graph codegen subgraph.harmony.yaml --output-dir src/types/",
+    "codegen:harmony_test": "graph codegen subgraph.harmony-testnet.yaml --output-dir src/types/",
+    "build:harmony": "graph build subgraph.harmony.yaml",
+    "build:rinkeby": "graph build subgraph.rinkeby.yaml",
+    "build:harmony_test": "graph build subgraph.harmony-testnet.yaml",
+    "deploy:rinkeby": "graph deploy agin-dropdisco/dexswap-rinkeby-gin subgraph.rinkeby.yaml --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --access-token fb68df21c1d149f68548567cc53a8844 --debug",
+    "deploy:harmony": "graph deploy agin-dropdisco/harmony_dexswap subgraph.harmony.yaml --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --access-token fb68df21c1d149f68548567cc53a8844 --debug"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.19.0",
+    "@graphprotocol/graph-ts": "^0.19.0",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.2"
+  }
+}
